@@ -1,0 +1,23 @@
+### lista dos clientes GET
+GET http://localhost:8080/clientes
+
+### cadastro do cliente e busca o CEP automaticamente (POST)
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nome": "Ana Beatriz",
+  "endereco": {
+    "cep": "01001-001",
+  }
+}
+
+### buscar cliente por ID (substitua 0 1 pelo ID desejado)
+GET http://localhost:8080/clientes/1
+
+### atualizar cliente
+PUT http://localhost:8080/clientes/1
+Content-Type: application/json
+
+### deletar um cliente po ID
+DELETE http://localhost:8080/clientes/1
